@@ -23,14 +23,10 @@ This app wants to promote experimenting with the sound decomposition process by 
 
 ## Featured decomposition methods
 
-* **HP**: Harmonic-Percussive separation. [1]
-* **HPR** (Harmonic-Percussive-Residual separation). [2]
-* **ST** (Structure Tensor) [3]
-* **Fuzzy** (Fuzzy) [4]
-
-## App description
-
-Three panels.
+* **HP**: Harmonic-Percussive separation [1]. Modes: hard mask, soft mask.
+* **HPR**: Harmonic-Percussive-Residual separation [2]. Modes: single decomposition, two-round decomposition. 
+* **ST**: Structure-Tensor-based separation [3].
+* **Fuzzy**: Fuzzy logic decomposition [4].
 
 ## Future updates
 * Add Standalone installer featuring MATLAB Runtime.
@@ -48,5 +44,5 @@ SiTraNo is distributed under the MIT Licence. Please refer to [**LICENCE.md**](L
 ## References
 * [1] D. Fitzgerald. _“Harmonic/percussive separation using median filtering”_. In Proc. Digital Audio Effects (DAFx), Graz, Austria, Sept. 2010, vol. 13.
 * [2] J. Driedger, M. Müller, and S. Disch. _“Extending harmonic-percussive  separation  of  audio  signals”_. In Proc. ISMIR, Taipei, Taiwan, Oct. 2014, pp. 611–616.
-* [3]  R. Füg, A. Niedermeier, J. Driedger, S. Disch, and M. Müller. _“Harmonic-percussive-residual  sound  separation  using  thestructure tensor on spectrograms”_. In Proc. IEEE Int. Conf.Acoust. Speech Signal Process. (ICASSP), Shanghai, China,Mar. 2016, pp. 445–449.
+* [3]  R. Füg, A. Niedermeier, J. Driedger, S. Disch, and M. Müller. _“Harmonic-percussive-residual  sound  separation  using  the structure tensor on spectrograms”_. In Proc. IEEE Int. Conf.Acoust. Speech Signal Process. (ICASSP), Shanghai, China,Mar. 2016, pp. 445–449.
 * [4] E. Moliner,  J. Rämö,  and V. Välimäki. _“Virtual bass sys-tem with fuzzy separation of tones and transients”_. In Proc. Digital Audio Effects (DAFx), Vienna, Austria, Sept. 2020.
