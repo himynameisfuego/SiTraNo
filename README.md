@@ -14,6 +14,11 @@ Decomposition of sounds into their tonal, transient, and noise components is an 
 * Audio Toolbox
 * Image Processing Toolbox
 
+## Installation and use
+* If your version of MATLAB is 2020b or later, download the latest [release](https://github.com/himynameisfuego/SiTraNo/releases/latest). If your version is 2020a or previous, refer to this [hotfix](https://github.com/himynameisfuego/SiTraNo/files/6351972/SiTraNo_HotFix_1.0.0.1.zip) until the next release.
+* In MATLAB, navigate to the SiTraNo folder, open **SiTraNo.mlappinstall** and install. You will find SiTraNo in the "Apps" tab, in the "My apps" group. Click on it to execute the app.
+* Upon launching SiTraNo, a navigation folder should pop up, asking you to choose the input audio file.
+
 ## Featured decomposition methods
 
 * **HP** (Harmonic-Percussive separation).
@@ -25,6 +30,15 @@ Decomposition of sounds into their tonal, transient, and noise components is an 
 
 Three panels.
 
-## License
+## Future updates
+* Add Standalone installer featuring MATLAB Runtime.
+* Adding new separation methods.
+* Polish spectrogram presentation.
+* Improve code efficiency.
+* JUCE version of the app.
 
-SiTraNo is distributed under the MIT Licence. Please refer to **LICENCE.md** for further information.
+## Contributing
+Suggestions and contributions to the code are both welcomed and encouraged. Please open an issue to discuss your changes and submit a pull request.
+
+## License
+SiTraNo is distributed under the MIT Licence. Please refer to [**LICENCE.md**](LICENSE.md) for further information.
