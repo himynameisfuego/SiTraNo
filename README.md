@@ -14,7 +14,7 @@ This app wants to promote experimenting with the sound decomposition process by 
 ## Dependencies
 
 * [Audio Toolbox](https://www.mathworks.com/products/audio.html)
-* [mage Processing Toolbox](https://www.mathworks.com/products/image.html)
+* [Image Processing Toolbox](https://www.mathworks.com/products/image.html)
 
 ## Installation and use
 * If your version of MATLAB is 2020b or later, download the latest [release](https://github.com/himynameisfuego/SiTraNo/releases/latest). If your version is 2020a or previous, refer to this [hotfix](https://github.com/himynameisfuego/SiTraNo/files/6351972/SiTraNo_HotFix_1.0.0.1.zip) until the next release.
