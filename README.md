@@ -1,4 +1,4 @@
-# SiTraNo
+# SiTraNo (SInes+TRAnsients+NOise)
 A MATLAB app for tonal-transient-noise decomposition of audio signals. Developed using App Designer in Matlab 2020b.
 
 ![](GUIFinal.png)
