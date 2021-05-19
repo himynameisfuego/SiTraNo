@@ -3,7 +3,7 @@ A MATLAB app for tonal-transient-noise decomposition of audio signals. Developed
 
 ![](GUIFinal.png)
 
-* L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for tonal-transient-noise decomposition of audio signals**"_ Submitted to Digital Audio Effects (DAFx) Conference 2021, Vienna, Austria.
+* L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for tonal-transient-noise decomposition of audio signals**"_. Submitted to Digital Audio Effects (DAFx) Conference 2021, Vienna, Austria.
 
 ## Abstract
 
