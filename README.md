@@ -1,13 +1,14 @@
 # SiTraNo (SInes+TRAnsients+NOise)
-A MATLAB app for tonal-transient-noise decomposition of audio signals. Developed using App Designer in Matlab 2020b.
+A MATLAB app for sines-transients-noise decomposition of audio signals. Developed using App Designer in Matlab 2020b.
 
 ![](GUIFinal.png)
 
-* L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for tonal-transient-noise decomposition of audio signals**"_. Submitted to Digital Audio Effects (DAFx) Conference 2021, Vienna, Austria.
+* L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for tonal-transient-noise decomposition of audio signals**"_.  Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), Vienna, Austria.
 
 ## Abstract
 
-Decomposition of sounds into their tonal, transient, and noise components is an active research topic and a widely-used tool in audio processing. Multiple solutions have been proposed in recent years, using time-frequency representations to identify either horizontal and vertical structures or orientations and anisotropy in the spectrogram of the sound. This is SiTraNo: an easy-to-use MATLAB application with a graphic user interface for audio decomposition that enables visualization and access to the tonal, transient, and noise classes, individually. This application allows the user to choose between different well-known separation methods to analyze an input sound file, to instantaneously control and remix its spectral components, and to visually check the quality of the decomposition, before producing the desired output file. The visualization of common artifacts, such as birdies and dropouts, is easy to get in SiTraNo. 
+Decomposition of sounds into their sinusoidal, transient, and noise components is an active research topic and a widely-used tool in audio processing. Multiple solutions have been proposed in recent years, using time-frequency representations to identify either horizontal and vertical structures or orientations and anisotropy in the spectrogram of the sound. 
+This is SiTraNo: an easy-to-use MATLAB application with a graphic user interface for audio decomposition that enables visualization and access to the sinusoidal, transient, and noise classes, individually. This application allows the user to choose between different well-known separation methods to analyze an input sound file, to instantaneously control and remix its spectral components, and to visually check the quality of the decomposition, before producing the desired output file. The visualization of common artifacts, such as birdies and dropouts, is easy to get in SiTraNo. 
 
 This app wants to promote experimenting with the sound decomposition process by observing the effect of variations for each spectral component on the original sound and by comparing different methods against each other, evaluating the separation quality both audibly and visually.
 
