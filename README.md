@@ -1,7 +1,7 @@
 # SiTraNo (SInes+TRAnsients+NOise)
 A MATLAB app for sines-transients-noise decomposition of audio signals. Developed using App Designer in Matlab 2020b.
 
-* L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for tonal-transient-noise decomposition of audio signals**"_.  Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), Vienna, Austria.
+* L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for sines-transient-noise decomposition of audio signals**"_.  Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), Vienna, Austria.
 
 ![](GUIFinal.png)
 
@@ -35,6 +35,8 @@ This app wants to promote experimenting with the sound decomposition process by 
 * Polish spectrogram presentation.
 * Improve code efficiency.
 * JUCE version of the app.
+
+Expected work period: Summer 2023
 
 ## Contributing
 Suggestions and contributions to the code are both welcomed and encouraged. Please open an issue to discuss your changes and submit a pull request.
