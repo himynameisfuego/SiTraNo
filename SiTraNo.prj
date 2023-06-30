@@ -1,5 +1,5 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3267385272" file="/u/28/fierrol1/data/Desktop/WorkLocal/STNApp/SiTraNo/SiTraNo.prj" location="/u/28/fierrol1/data/Desktop/WorkLocal/STNApp/SiTraNo" name="SiTraNo" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="256393461" file="/u/28/fierrol1/data/Desktop/WorkLocal/STNApp/SiTraNo/SiTraNo.prj" location="/u/28/fierrol1/data/Desktop/WorkLocal/STNApp/SiTraNo" name="SiTraNo" target="target.mlapps" target-name="Package App">
     <param.appname>SiTraNo</param.appname>
     <param.authnamewatermark>Leonardo Fierro</param.authnamewatermark>
     <param.email>leonardo.fierro@aalto.fi</param.email>
@@ -10,33 +10,20 @@
       <file>${PROJECT_ROOT}/SiTraNo_resources/icon_24.png</file>
       <file>${PROJECT_ROOT}/SiTraNo_resources/icon_16.png</file>
     </param.icons>
-    <param.summary>Decomposition of the audio input in Tonal, Transients and Noise.</param.summary>
-    <param.description>MATLAB app for decomposition of the audio input in Tonal, Transients and Noise components, with analysis and evaluation. Implemented separation techniques: Harmonic-Percussive, Harmonic-Percussive-Residual, Fuzzy, Structure Tensor. Visit companion page for manual, info and examples: http://research.spa.aalto.fi/publications/papers/dafx21-STN/</param.description>
-    <param.screenshot>/tmp/tp4ffae4a2_6202_4630_9446_e0b32f75dd9b.png</param.screenshot>
-    <param.version>1.0</param.version>
-    <param.products.name>
-      <item>MATLAB</item>
-      <item>Audio Toolbox</item>
-      <item>Image Processing Toolbox</item>
-    </param.products.name>
-    <param.products.id>
-      <item>1</item>
-      <item>151</item>
-      <item>17</item>
-    </param.products.id>
-    <param.products.version>
-      <item>9.9</item>
-      <item>2.3</item>
-      <item>11.2</item>
-    </param.products.version>
+    <param.summary>Decomposition of the audio input in Sines, Transients and Noise.</param.summary>
+    <param.description>Decomposition of the audio input in Sines, Transients and Noise.</param.description>
+    <param.screenshot>/tmp/tp505ebf4e_52f2_48c7_8f1f_5fe6bfaeaab3.png</param.screenshot>
+    <param.version>1.1</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
     <param.platforms />
     <param.output>${PROJECT_ROOT}</param.output>
-    <param.guid>1d71b40c-3bb7-4a4d-ad24-d3643e6b843b</param.guid>
+    <param.guid>3a40439c-b4fd-4d61-92a6-73e9d7012ee6</param.guid>
     <unset>
-      <param.authnamewatermark />
-      <param.email />
-      <param.company />
-      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
       <param.platforms />
       <param.output />
     </unset>
@@ -53,45 +40,8 @@
     </build-deliverables>
     <workflow />
     <matlab>
-      <root>/opt/matlab2020b</root>
-      <toolboxes>
-        <toolbox name="matlabcoder" />
-        <toolbox name="embeddedcoder" />
-        <toolbox name="gpucoder" />
-        <toolbox name="fixedpoint" />
-        <toolbox name="matlabhdlcoder" />
-        <toolbox name="neuralnetwork" />
-      </toolboxes>
-      <toolbox>
-        <matlabcoder>
-          <enabled>true</enabled>
-        </matlabcoder>
-      </toolbox>
-      <toolbox>
-        <embeddedcoder>
-          <enabled>true</enabled>
-        </embeddedcoder>
-      </toolbox>
-      <toolbox>
-        <gpucoder>
-          <enabled>true</enabled>
-        </gpucoder>
-      </toolbox>
-      <toolbox>
-        <fixedpoint>
-          <enabled>true</enabled>
-        </fixedpoint>
-      </toolbox>
-      <toolbox>
-        <matlabhdlcoder>
-          <enabled>true</enabled>
-        </matlabhdlcoder>
-      </toolbox>
-      <toolbox>
-        <neuralnetwork>
-          <enabled>true</enabled>
-        </neuralnetwork>
-      </toolbox>
+      <root>/usr/local/MATLAB/R2022b</root>
+      <toolboxes />
     </matlab>
     <platform>
       <unix>true</unix>
@@ -102,7 +52,7 @@
       <vista>false</vista>
       <linux>true</linux>
       <solaris>false</solaris>
-      <osver>4.15.0-141-generic</osver>
+      <osver>5.4.0-152-generic</osver>
       <os32>false</os32>
       <os64>true</os64>
       <arch>glnxa64</arch>

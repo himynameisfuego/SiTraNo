@@ -3,72 +3,6 @@ classdef SiTraNo_exported < matlab.apps.AppBase
     % Properties that correspond to app components
     properties (Access = public)
         UIFigure                     matlab.ui.Figure
-        GridLayout                   matlab.ui.container.GridLayout
-        LeftPanel                    matlab.ui.container.Panel
-        GaugeN                       matlab.ui.control.SemicircularGauge
-        TabGroup                     matlab.ui.container.TabGroup
-        SpectrumTab                  matlab.ui.container.Tab
-        SpectrumAnalyzerLabel        matlab.ui.control.Label
-        Spectrum                     matlab.ui.control.UIAxes
-        TonalTab                     matlab.ui.container.Tab
-        STFTTonalComponentLabel      matlab.ui.control.Label
-        STFT_S                       matlab.ui.control.UIAxes
-        TransientTab                 matlab.ui.container.Tab
-        STFTTransientComponentLabel  matlab.ui.control.Label
-        STFT_T                       matlab.ui.control.UIAxes
-        NoiseTab                     matlab.ui.container.Tab
-        STFTNoiseComponentLabel      matlab.ui.control.Label
-        STFT_N                       matlab.ui.control.UIAxes
-        EvaluationTab                matlab.ui.container.Tab
-        ESLabel                      matlab.ui.control.Label
-        BinswArtifactsLabel          matlab.ui.control.Label
-        STonalLabel                  matlab.ui.control.Label
-        TTransientLabel              matlab.ui.control.Label
-        NNoiseLabel                  matlab.ui.control.Label
-        EnergyLabel_2                matlab.ui.control.Label
-        ASLabel                      matlab.ui.control.Label
-        ETLabel                      matlab.ui.control.Label
-        ATLabel                      matlab.ui.control.Label
-        ENLabel                      matlab.ui.control.Label
-        ANLabel                      matlab.ui.control.Label
-        ArtifactsperTimeFrameLabel   matlab.ui.control.Label
-        ArtifactsAxes                matlab.ui.control.UIAxes
-        GaugeT                       matlab.ui.control.SemicircularGauge
-        GaugeS                       matlab.ui.control.SemicircularGauge
-        TLabel                       matlab.ui.control.Label
-        SLabel                       matlab.ui.control.Label
-        NLabel                       matlab.ui.control.Label
-        UIAxes2                      matlab.ui.control.UIAxes
-        RightPanel                   matlab.ui.container.Panel
-        activeLabel                  matlab.ui.control.Label
-        ParametersLabel              matlab.ui.control.Label
-        STOPButton                   matlab.ui.control.StateButton
-        PLAYButton                   matlab.ui.control.StateButton
-        SiTraNoLabel                 matlab.ui.control.Label
-        TonesCheckBox                matlab.ui.control.CheckBox
-        LoopCheckBox                 matlab.ui.control.CheckBox
-        NoiseCheckBox                matlab.ui.control.CheckBox
-        TransientsCheckBox           matlab.ui.control.CheckBox
-        OpenButton                   matlab.ui.control.Button
-        TransientsSlider             matlab.ui.control.Slider
-        Label_2                      matlab.ui.control.Label
-        NoiseSlider                  matlab.ui.control.Slider
-        Label                        matlab.ui.control.Label
-        TonesSlider                  matlab.ui.control.Slider
-        Label_3                      matlab.ui.control.Label
-        MethodDropDown               matlab.ui.control.DropDown
-        MethodDropDownLabel          matlab.ui.control.Label
-        StatusLamp                   matlab.ui.control.Lamp
-        StatusLabel                  matlab.ui.control.Label
-        NFFTEditField                matlab.ui.control.NumericEditField
-        NFFTLabel                    matlab.ui.control.Label
-        ThresholdSEditField          matlab.ui.control.NumericEditField
-        ThresholdSEditFieldLabel     matlab.ui.control.Label
-        ThresholdTEditField          matlab.ui.control.NumericEditField
-        ThresholdTEditFieldLabel     matlab.ui.control.Label
-        UpdatePlotsButton            matlab.ui.control.Button
-        SaveButton                   matlab.ui.control.Button
-        Image                        matlab.ui.control.Image
         EditMenu                     matlab.ui.container.Menu
         GlobalparametersMenu         matlab.ui.container.Menu
         FileMenu                     matlab.ui.container.Menu
@@ -78,6 +12,72 @@ classdef SiTraNo_exported < matlab.apps.AppBase
         VersionLogMenu               matlab.ui.container.Menu
         AboutMenu                    matlab.ui.container.Menu
         WebsiteMenu                  matlab.ui.container.Menu
+        GridLayout                   matlab.ui.container.GridLayout
+        LeftPanel                    matlab.ui.container.Panel
+        NLabel                       matlab.ui.control.Label
+        SLabel                       matlab.ui.control.Label
+        TLabel                       matlab.ui.control.Label
+        GaugeS                       matlab.ui.control.SemicircularGauge
+        GaugeT                       matlab.ui.control.SemicircularGauge
+        TabGroup                     matlab.ui.container.TabGroup
+        SpectrumTab                  matlab.ui.container.Tab
+        SpectrumAnalyzerLabel        matlab.ui.control.Label
+        Spectrum                     matlab.ui.control.UIAxes
+        SinesTab                     matlab.ui.container.Tab
+        STFTSineComponentLabel       matlab.ui.control.Label
+        STFT_S                       matlab.ui.control.UIAxes
+        TransientTab                 matlab.ui.container.Tab
+        STFTTransientComponentLabel  matlab.ui.control.Label
+        STFT_T                       matlab.ui.control.UIAxes
+        NoiseTab                     matlab.ui.container.Tab
+        STFTNoiseComponentLabel      matlab.ui.control.Label
+        STFT_N                       matlab.ui.control.UIAxes
+        EvaluationTab                matlab.ui.container.Tab
+        ArtifactsperTimeFrameLabel   matlab.ui.control.Label
+        ANLabel                      matlab.ui.control.Label
+        ENLabel                      matlab.ui.control.Label
+        ATLabel                      matlab.ui.control.Label
+        ETLabel                      matlab.ui.control.Label
+        ASLabel                      matlab.ui.control.Label
+        EnergyLabel_2                matlab.ui.control.Label
+        NNoiseLabel                  matlab.ui.control.Label
+        TTransientLabel              matlab.ui.control.Label
+        SSinesLabel                  matlab.ui.control.Label
+        BinswArtifactsLabel          matlab.ui.control.Label
+        ESLabel                      matlab.ui.control.Label
+        ArtifactsAxes                matlab.ui.control.UIAxes
+        GaugeN                       matlab.ui.control.SemicircularGauge
+        UIAxes2                      matlab.ui.control.UIAxes
+        RightPanel                   matlab.ui.container.Panel
+        Image                        matlab.ui.control.Image
+        SaveButton                   matlab.ui.control.Button
+        UpdatePlotsButton            matlab.ui.control.Button
+        ThresholdTEditFieldLabel     matlab.ui.control.Label
+        ThresholdTEditField          matlab.ui.control.NumericEditField
+        ThresholdSEditFieldLabel     matlab.ui.control.Label
+        ThresholdSEditField          matlab.ui.control.NumericEditField
+        NFFTLabel                    matlab.ui.control.Label
+        NFFTEditField                matlab.ui.control.NumericEditField
+        StatusLabel                  matlab.ui.control.Label
+        StatusLamp                   matlab.ui.control.Lamp
+        MethodDropDownLabel          matlab.ui.control.Label
+        MethodDropDown               matlab.ui.control.DropDown
+        Label_3                      matlab.ui.control.Label
+        TonesSlider                  matlab.ui.control.Slider
+        Label                        matlab.ui.control.Label
+        NoiseSlider                  matlab.ui.control.Slider
+        Label_2                      matlab.ui.control.Label
+        TransientsSlider             matlab.ui.control.Slider
+        OpenButton                   matlab.ui.control.Button
+        TransientsCheckBox           matlab.ui.control.CheckBox
+        NoiseCheckBox                matlab.ui.control.CheckBox
+        LoopCheckBox                 matlab.ui.control.CheckBox
+        SinesCheckBox                matlab.ui.control.CheckBox
+        SiTraNoLabel                 matlab.ui.control.Label
+        PLAYButton                   matlab.ui.control.StateButton
+        STOPButton                   matlab.ui.control.StateButton
+        ParametersLabel              matlab.ui.control.Label
+        activeLabel                  matlab.ui.control.Label
     end
 
     % Properties that correspond to apps with auto-reflow
@@ -133,7 +133,7 @@ classdef SiTraNo_exported < matlab.apps.AppBase
         
         
         function resetInitialValues(app)
-            app.TonesCheckBox.Value = 1;
+            app.SinesCheckBox.Value = 1;
             app.TonesSlider.Value = 100;
             app.TransientsCheckBox.Value = 1;
             app.TransientsSlider.Value = 100;
@@ -154,8 +154,10 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.nWin.r0 = 2048; app.nHop.r0 = app.nWin.r0 / 8;
             app.NFFT.r0 = app.nWin.r0; app.win.r0 = hann(app.nWin.r0,'periodic');
             app.nWin.r1 = 8192; app.nHop.r1 = app.nWin.r1 / 8;
+            %app.nWin.r1 = 4096; app.nHop.r1 = app.nWin.r1 / 8;
             app.NFFT.r1 = app.nWin.r1; app.win.r1 = hann(app.nWin.r1,'periodic');
             app.nWin.r2 = 512; app.nHop.r2 = app.nWin.r2 / 8;
+            %app.nWin.r2 = 256; app.nHop.r2 = app.nWin.r2 / 8;
             app.NFFT.r2 = app.nWin.r2; app.win.r2 = hann(app.nWin.r2,'periodic');
             
             app.FFTsize = 2048; app.NFFTEditField.Value = app.FFTsize;
@@ -306,6 +308,8 @@ classdef SiTraNo_exported < matlab.apps.AppBase
                     app.HPHard();
                 case "Fuzzy"
                     app.Fuzzy();
+                case "STN"
+                    app.decomposeSTN();
             end
             
             app.StatusLamp.Color = 'g';
@@ -363,6 +367,38 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             
         end
         
+
+        function decomposeSTN(app)
+
+            [X,~] = app.stft(app.Audio.inputdata,app.win.r1,app.nHop.r1,...
+                app.NFFT.r1);
+            Rt = app.transientness(X,app.nMedianH.r1,app.nMedianV.r1);
+            Rs = 1-Rt;
+            
+            G1 = 0.75; G2 = 0.85;
+            
+            S = sin(pi*(Rs-G2)/(2*(G1-G2))).^2;    
+            S(Rs>=G1) = 1; S(Rs<G2) = 0;
+                    
+            app.Audio.tonal = app.istft(S.*X, app.nHop.r1, app.win.r1);
+            x_res = app.istft((1-S).*X, app.nHop.r1, app.win.r1);
+
+            
+            [X,~] = app.stft(x_res,app.win.r2,app.nHop.r2,...
+                app.NFFT.r2);
+                      
+            Rt = app.transientness(X,app.nMedianH.r2,app.nMedianV.r2);
+            G1 = 0.7; G2 = 0.8;
+            T = sin(pi*(Rt-G2)/(2*(G1-G2))).^2; 
+            T(Rt>=G1) = 1; T(Rt<G2) = 0;
+            
+
+            app.Audio.transient = app.istft(T.*X, app.nHop.r2, app.win.r2);
+            app.Audio.noise = app.istft((1-T).*X, app.nHop.r2, app.win.r2);
+            drawnow
+        
+        end
+
         function HPR(app)
             [X,~] = app.stft(app.Audio.inputdata,app.win.r1,app.nHop.r1,...
                 app.NFFT.r1);
@@ -592,7 +628,7 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             
             NFFT = app.FFTsize;
             
-            app.TabGroup.SelectedTab = app.TonalTab;
+            app.TabGroup.SelectedTab = app.SinesTab;
             drawnow
             [X,~] = app.stft(app.Audio.tonal/max(abs(app.Audio.inputdata)),hann(NFFT),NFFT/2,NFFT);
             X = 20*log10(abs(X)./NFFT);
@@ -695,7 +731,7 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             [t,f] = meshgrid(t,f);
         switch fset
             case "S"
-                app.TabGroup.SelectedTab = app.TonalTab;
+                app.TabGroup.SelectedTab = app.SinesTab;
                 mesh(app.STFT_S,t,f,20*log10(abs(X))); view(app.STFT_S,0,90); grid(app.STFT_S,"on")
                 xlim(app.STFT_S,[t(1,1) t(1,end)]); ylim(app.STFT_S,[f(1,1) f(end,1)]);
             case "T"
@@ -769,7 +805,7 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.updateAudio();
             app.Length = length(app.Audio.tonal);
             
-            drawnow
+            
             app.plotSTFTold();
             drawnow
             
@@ -800,6 +836,7 @@ classdef SiTraNo_exported < matlab.apps.AppBase
 %             end
             %pp.FigurePosition = (fPos(3)-fPos(1))/(fPos(4)-fPos(2));
             app.UIFigure.Name = 'SiTraNo v1.0';
+            
             %app.UIFigure.SizeChangedFcn = createCallbackFcn(app, @myUpdateAppLayout, true);
             app.readInput();
         end
@@ -809,9 +846,9 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.readInput();
         end
 
-        % Value changed function: TonesCheckBox
-        function TonesCheckBoxValueChanged(app, event)
-            if app.TonesCheckBox.Value == 1
+        % Value changed function: SinesCheckBox
+        function SinesCheckBoxValueChanged(app, event)
+            if app.SinesCheckBox.Value == 1
                 app.TonesSlider.Value = 100;               
             else
                 app.TonesSlider.Value = 0;
@@ -980,7 +1017,7 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             currentFigureWidth = app.UIFigure.Position(3);
             if(currentFigureWidth <= app.onePanelWidth)
                 % Change to a 2x1 grid
-                app.GridLayout.RowHeight = {781, 781};
+                app.GridLayout.RowHeight = {785, 785};
                 app.GridLayout.ColumnWidth = {'1x'};
                 app.RightPanel.Layout.Row = 2;
                 app.RightPanel.Layout.Column = 1;
@@ -1008,6 +1045,48 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.UIFigure.Resize = 'off';
             app.UIFigure.SizeChangedFcn = createCallbackFcn(app, @updateAppLayout, true);
 
+            % Create EditMenu
+            app.EditMenu = uimenu(app.UIFigure);
+            app.EditMenu.Text = 'Edit';
+
+            % Create GlobalparametersMenu
+            app.GlobalparametersMenu = uimenu(app.EditMenu);
+            app.GlobalparametersMenu.MenuSelectedFcn = createCallbackFcn(app, @GlobalparametersMenuSelected, true);
+            app.GlobalparametersMenu.Text = 'Global parameters';
+
+            % Create FileMenu
+            app.FileMenu = uimenu(app.UIFigure);
+            app.FileMenu.Text = 'File';
+
+            % Create OpenMenu
+            app.OpenMenu = uimenu(app.FileMenu);
+            app.OpenMenu.MenuSelectedFcn = createCallbackFcn(app, @OpenButtonPushed, true);
+            app.OpenMenu.Text = 'Open';
+
+            % Create SaveMenu
+            app.SaveMenu = uimenu(app.FileMenu);
+            app.SaveMenu.MenuSelectedFcn = createCallbackFcn(app, @SaveButtonPushed3, true);
+            app.SaveMenu.Text = 'Save';
+
+            % Create InfoMenu
+            app.InfoMenu = uimenu(app.UIFigure);
+            app.InfoMenu.Text = 'Info';
+
+            % Create VersionLogMenu
+            app.VersionLogMenu = uimenu(app.InfoMenu);
+            app.VersionLogMenu.MenuSelectedFcn = createCallbackFcn(app, @VersionLogMenuSelected, true);
+            app.VersionLogMenu.Text = 'Version Log';
+
+            % Create AboutMenu
+            app.AboutMenu = uimenu(app.InfoMenu);
+            app.AboutMenu.MenuSelectedFcn = createCallbackFcn(app, @AboutMenuSelected, true);
+            app.AboutMenu.Text = 'About...';
+
+            % Create WebsiteMenu
+            app.WebsiteMenu = uimenu(app.InfoMenu);
+            app.WebsiteMenu.MenuSelectedFcn = createCallbackFcn(app, @WebsiteMenuSelected, true);
+            app.WebsiteMenu.Text = 'Website';
+
             % Create GridLayout
             app.GridLayout = uigridlayout(app.UIFigure);
             app.GridLayout.ColumnWidth = {880, '1x'};
@@ -1023,6 +1102,17 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.LeftPanel.BackgroundColor = [0.149 0.149 0.149];
             app.LeftPanel.Layout.Row = 1;
             app.LeftPanel.Layout.Column = 1;
+
+            % Create UIAxes2
+            app.UIAxes2 = uiaxes(app.LeftPanel);
+            xlabel(app.UIAxes2, 'Time (s)')
+            app.UIAxes2.XColor = [1 1 1];
+            app.UIAxes2.YColor = [1 1 1];
+            app.UIAxes2.ZColor = [1 1 1];
+            app.UIAxes2.Color = [0.149 0.149 0.149];
+            app.UIAxes2.GridColor = [1 1 1];
+            app.UIAxes2.ButtonDownFcn = createCallbackFcn(app, @UIAxes2ButtonDown, true);
+            app.UIAxes2.Position = [173 27 686 218];
 
             % Create GaugeN
             app.GaugeN = uigauge(app.LeftPanel, 'semicircular');
@@ -1040,14 +1130,6 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.SpectrumTab.BackgroundColor = [0.149 0.149 0.149];
             app.SpectrumTab.ForegroundColor = [0.149 0.149 0.149];
 
-            % Create SpectrumAnalyzerLabel
-            app.SpectrumAnalyzerLabel = uilabel(app.SpectrumTab);
-            app.SpectrumAnalyzerLabel.HorizontalAlignment = 'center';
-            app.SpectrumAnalyzerLabel.FontWeight = 'bold';
-            app.SpectrumAnalyzerLabel.FontColor = [1 1 1];
-            app.SpectrumAnalyzerLabel.Position = [330 456 208 40];
-            app.SpectrumAnalyzerLabel.Text = 'Spectrum Analyzer';
-
             % Create Spectrum
             app.Spectrum = uiaxes(app.SpectrumTab);
             xlabel(app.Spectrum, 'Frequency (Hz)')
@@ -1059,21 +1141,21 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.Spectrum.GridColor = [1 1 1];
             app.Spectrum.Position = [11 16 846 462];
 
-            % Create TonalTab
-            app.TonalTab = uitab(app.TabGroup);
-            app.TonalTab.Title = 'Tonal';
-            app.TonalTab.BackgroundColor = [0.149 0.149 0.149];
+            % Create SpectrumAnalyzerLabel
+            app.SpectrumAnalyzerLabel = uilabel(app.SpectrumTab);
+            app.SpectrumAnalyzerLabel.HorizontalAlignment = 'center';
+            app.SpectrumAnalyzerLabel.FontWeight = 'bold';
+            app.SpectrumAnalyzerLabel.FontColor = [1 1 1];
+            app.SpectrumAnalyzerLabel.Position = [330 456 208 40];
+            app.SpectrumAnalyzerLabel.Text = 'Spectrum Analyzer';
 
-            % Create STFTTonalComponentLabel
-            app.STFTTonalComponentLabel = uilabel(app.TonalTab);
-            app.STFTTonalComponentLabel.HorizontalAlignment = 'center';
-            app.STFTTonalComponentLabel.FontWeight = 'bold';
-            app.STFTTonalComponentLabel.FontColor = [1 1 1];
-            app.STFTTonalComponentLabel.Position = [330 456 208 40];
-            app.STFTTonalComponentLabel.Text = 'STFT - Tonal Component';
+            % Create SinesTab
+            app.SinesTab = uitab(app.TabGroup);
+            app.SinesTab.Title = 'Sines';
+            app.SinesTab.BackgroundColor = [0.149 0.149 0.149];
 
             % Create STFT_S
-            app.STFT_S = uiaxes(app.TonalTab);
+            app.STFT_S = uiaxes(app.SinesTab);
             xlabel(app.STFT_S, 'Time (s)')
             ylabel(app.STFT_S, 'Frequency (Hz)')
             zlabel(app.STFT_S, 'Magnitude (dB)')
@@ -1084,18 +1166,18 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.STFT_S.GridColor = [1 1 1];
             app.STFT_S.Position = [11 16 846 462];
 
+            % Create STFTSineComponentLabel
+            app.STFTSineComponentLabel = uilabel(app.SinesTab);
+            app.STFTSineComponentLabel.HorizontalAlignment = 'center';
+            app.STFTSineComponentLabel.FontWeight = 'bold';
+            app.STFTSineComponentLabel.FontColor = [1 1 1];
+            app.STFTSineComponentLabel.Position = [330 456 208 40];
+            app.STFTSineComponentLabel.Text = 'STFT - Sine Component';
+
             % Create TransientTab
             app.TransientTab = uitab(app.TabGroup);
             app.TransientTab.Title = 'Transient';
             app.TransientTab.BackgroundColor = [0.149 0.149 0.149];
-
-            % Create STFTTransientComponentLabel
-            app.STFTTransientComponentLabel = uilabel(app.TransientTab);
-            app.STFTTransientComponentLabel.HorizontalAlignment = 'center';
-            app.STFTTransientComponentLabel.FontWeight = 'bold';
-            app.STFTTransientComponentLabel.FontColor = [1 1 1];
-            app.STFTTransientComponentLabel.Position = [330 456 208 40];
-            app.STFTTransientComponentLabel.Text = 'STFT - Transient Component';
 
             % Create STFT_T
             app.STFT_T = uiaxes(app.TransientTab);
@@ -1109,18 +1191,18 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.STFT_T.GridColor = [1 1 1];
             app.STFT_T.Position = [11 16 846 462];
 
+            % Create STFTTransientComponentLabel
+            app.STFTTransientComponentLabel = uilabel(app.TransientTab);
+            app.STFTTransientComponentLabel.HorizontalAlignment = 'center';
+            app.STFTTransientComponentLabel.FontWeight = 'bold';
+            app.STFTTransientComponentLabel.FontColor = [1 1 1];
+            app.STFTTransientComponentLabel.Position = [330 456 208 40];
+            app.STFTTransientComponentLabel.Text = 'STFT - Transient Component';
+
             % Create NoiseTab
             app.NoiseTab = uitab(app.TabGroup);
             app.NoiseTab.Title = 'Noise';
             app.NoiseTab.BackgroundColor = [0.149 0.149 0.149];
-
-            % Create STFTNoiseComponentLabel
-            app.STFTNoiseComponentLabel = uilabel(app.NoiseTab);
-            app.STFTNoiseComponentLabel.HorizontalAlignment = 'center';
-            app.STFTNoiseComponentLabel.FontWeight = 'bold';
-            app.STFTNoiseComponentLabel.FontColor = [1 1 1];
-            app.STFTNoiseComponentLabel.Position = [330 456 208 40];
-            app.STFTNoiseComponentLabel.Text = 'STFT - Noise Component';
 
             % Create STFT_N
             app.STFT_N = uiaxes(app.NoiseTab);
@@ -1134,10 +1216,32 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.STFT_N.GridColor = [1 1 1];
             app.STFT_N.Position = [11 16 846 462];
 
+            % Create STFTNoiseComponentLabel
+            app.STFTNoiseComponentLabel = uilabel(app.NoiseTab);
+            app.STFTNoiseComponentLabel.HorizontalAlignment = 'center';
+            app.STFTNoiseComponentLabel.FontWeight = 'bold';
+            app.STFTNoiseComponentLabel.FontColor = [1 1 1];
+            app.STFTNoiseComponentLabel.Position = [330 456 208 40];
+            app.STFTNoiseComponentLabel.Text = 'STFT - Noise Component';
+
             % Create EvaluationTab
             app.EvaluationTab = uitab(app.TabGroup);
             app.EvaluationTab.Title = 'Evaluation';
             app.EvaluationTab.BackgroundColor = [0.149 0.149 0.149];
+
+            % Create ArtifactsAxes
+            app.ArtifactsAxes = uiaxes(app.EvaluationTab);
+            xlabel(app.ArtifactsAxes, 'Time (s)')
+            ylabel(app.ArtifactsAxes, 'Artifacts (%)')
+            app.ArtifactsAxes.Toolbar.Visible = 'off';
+            app.ArtifactsAxes.PlotBoxAspectRatio = [2.86153846153846 1 1];
+            app.ArtifactsAxes.XColor = [1 1 1];
+            app.ArtifactsAxes.YColor = [1 1 1];
+            app.ArtifactsAxes.ZColor = [1 1 1];
+            app.ArtifactsAxes.Color = [0.149 0.149 0.149];
+            app.ArtifactsAxes.GridColor = [1 1 1];
+            app.ArtifactsAxes.MinorGridColor = [0.149 0.149 0.149];
+            app.ArtifactsAxes.Position = [41 16 792 315];
 
             % Create ESLabel
             app.ESLabel = uilabel(app.EvaluationTab);
@@ -1155,13 +1259,13 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.BinswArtifactsLabel.Position = [50 344 208 40];
             app.BinswArtifactsLabel.Text = 'Bins w/ Artifacts (%)';
 
-            % Create STonalLabel
-            app.STonalLabel = uilabel(app.EvaluationTab);
-            app.STonalLabel.HorizontalAlignment = 'center';
-            app.STonalLabel.FontWeight = 'bold';
-            app.STonalLabel.FontColor = [1 1 1];
-            app.STonalLabel.Position = [280 438 208 40];
-            app.STonalLabel.Text = 'S (Tonal)';
+            % Create SSinesLabel
+            app.SSinesLabel = uilabel(app.EvaluationTab);
+            app.SSinesLabel.HorizontalAlignment = 'center';
+            app.SSinesLabel.FontWeight = 'bold';
+            app.SSinesLabel.FontColor = [1 1 1];
+            app.SSinesLabel.Position = [280 438 208 40];
+            app.SSinesLabel.Text = 'S (Sines)';
 
             % Create TTransientLabel
             app.TTransientLabel = uilabel(app.EvaluationTab);
@@ -1235,19 +1339,6 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.ArtifactsperTimeFrameLabel.Position = [333 297 208 40];
             app.ArtifactsperTimeFrameLabel.Text = 'Artifacts per Time Frame';
 
-            % Create ArtifactsAxes
-            app.ArtifactsAxes = uiaxes(app.EvaluationTab);
-            xlabel(app.ArtifactsAxes, 'Time (s)')
-            ylabel(app.ArtifactsAxes, 'Artifacts (%)')
-            app.ArtifactsAxes.Toolbar.Visible = 'off';
-            app.ArtifactsAxes.XColor = [1 1 1];
-            app.ArtifactsAxes.YColor = [1 1 1];
-            app.ArtifactsAxes.ZColor = [1 1 1];
-            app.ArtifactsAxes.Color = [0.149 0.149 0.149];
-            app.ArtifactsAxes.GridColor = [1 1 1];
-            app.ArtifactsAxes.MinorGridColor = [0.149 0.149 0.149];
-            app.ArtifactsAxes.Position = [41 16 792 315];
-
             % Create GaugeT
             app.GaugeT = uigauge(app.LeftPanel, 'semicircular');
             app.GaugeT.BackgroundColor = [0.149 0.149 0.149];
@@ -1283,17 +1374,6 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.NLabel.FontColor = [1 1 1];
             app.NLabel.Position = [84 39 33 39];
             app.NLabel.Text = 'N';
-
-            % Create UIAxes2
-            app.UIAxes2 = uiaxes(app.LeftPanel);
-            xlabel(app.UIAxes2, 'Time (s)')
-            app.UIAxes2.XColor = [1 1 1];
-            app.UIAxes2.YColor = [1 1 1];
-            app.UIAxes2.ZColor = [1 1 1];
-            app.UIAxes2.Color = [0.149 0.149 0.149];
-            app.UIAxes2.GridColor = [1 1 1];
-            app.UIAxes2.ButtonDownFcn = createCallbackFcn(app, @UIAxes2ButtonDown, true);
-            app.UIAxes2.Position = [173 27 686 218];
 
             % Create RightPanel
             app.RightPanel = uipanel(app.GridLayout);
@@ -1338,14 +1418,14 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.SiTraNoLabel.Position = [46 695 291 75];
             app.SiTraNoLabel.Text = 'SiTraNo      ';
 
-            % Create TonesCheckBox
-            app.TonesCheckBox = uicheckbox(app.RightPanel);
-            app.TonesCheckBox.ValueChangedFcn = createCallbackFcn(app, @TonesCheckBoxValueChanged, true);
-            app.TonesCheckBox.Text = 'Tones';
-            app.TonesCheckBox.FontWeight = 'bold';
-            app.TonesCheckBox.FontColor = [1 1 1];
-            app.TonesCheckBox.Position = [62 346 96 36];
-            app.TonesCheckBox.Value = true;
+            % Create SinesCheckBox
+            app.SinesCheckBox = uicheckbox(app.RightPanel);
+            app.SinesCheckBox.ValueChangedFcn = createCallbackFcn(app, @SinesCheckBoxValueChanged, true);
+            app.SinesCheckBox.Text = 'Sines';
+            app.SinesCheckBox.FontWeight = 'bold';
+            app.SinesCheckBox.FontColor = [1 1 1];
+            app.SinesCheckBox.Position = [62 346 96 36];
+            app.SinesCheckBox.Value = true;
 
             % Create LoopCheckBox
             app.LoopCheckBox = uicheckbox(app.RightPanel);
@@ -1425,12 +1505,12 @@ classdef SiTraNo_exported < matlab.apps.AppBase
 
             % Create MethodDropDown
             app.MethodDropDown = uidropdown(app.RightPanel);
-            app.MethodDropDown.Items = {'HP (Hard Mask)', 'HP (Soft Mask)', 'HPR (Single Stage)', 'HPR', 'StructureTensor', 'Fuzzy'};
+            app.MethodDropDown.Items = {'HP (Hard Mask)', 'HP (Soft Mask)', 'HPR (Single Stage)', 'HPR', 'StructureTensor', 'Fuzzy', 'STN'};
             app.MethodDropDown.ValueChangedFcn = createCallbackFcn(app, @MethodDropDownValueChanged, true);
             app.MethodDropDown.FontColor = [1 1 1];
             app.MethodDropDown.BackgroundColor = [0.149 0.149 0.149];
             app.MethodDropDown.Position = [133 558 200 35];
-            app.MethodDropDown.Value = 'HPR';
+            app.MethodDropDown.Value = 'STN';
 
             % Create MethodDropDownLabel
             app.MethodDropDownLabel = uilabel(app.RightPanel);
@@ -1509,48 +1589,6 @@ classdef SiTraNo_exported < matlab.apps.AppBase
             app.Image.Position = [223 704 83 56];
             app.Image.ImageSource = 'logo.png';
 
-            % Create EditMenu
-            app.EditMenu = uimenu(app.UIFigure);
-            app.EditMenu.Text = 'Edit';
-
-            % Create GlobalparametersMenu
-            app.GlobalparametersMenu = uimenu(app.EditMenu);
-            app.GlobalparametersMenu.MenuSelectedFcn = createCallbackFcn(app, @GlobalparametersMenuSelected, true);
-            app.GlobalparametersMenu.Text = 'Global parameters';
-
-            % Create FileMenu
-            app.FileMenu = uimenu(app.UIFigure);
-            app.FileMenu.Text = 'File';
-
-            % Create OpenMenu
-            app.OpenMenu = uimenu(app.FileMenu);
-            app.OpenMenu.MenuSelectedFcn = createCallbackFcn(app, @OpenButtonPushed, true);
-            app.OpenMenu.Text = 'Open';
-
-            % Create SaveMenu
-            app.SaveMenu = uimenu(app.FileMenu);
-            app.SaveMenu.MenuSelectedFcn = createCallbackFcn(app, @SaveButtonPushed3, true);
-            app.SaveMenu.Text = 'Save';
-
-            % Create InfoMenu
-            app.InfoMenu = uimenu(app.UIFigure);
-            app.InfoMenu.Text = 'Info';
-
-            % Create VersionLogMenu
-            app.VersionLogMenu = uimenu(app.InfoMenu);
-            app.VersionLogMenu.MenuSelectedFcn = createCallbackFcn(app, @VersionLogMenuSelected, true);
-            app.VersionLogMenu.Text = 'Version Log';
-
-            % Create AboutMenu
-            app.AboutMenu = uimenu(app.InfoMenu);
-            app.AboutMenu.MenuSelectedFcn = createCallbackFcn(app, @AboutMenuSelected, true);
-            app.AboutMenu.Text = 'About...';
-
-            % Create WebsiteMenu
-            app.WebsiteMenu = uimenu(app.InfoMenu);
-            app.WebsiteMenu.MenuSelectedFcn = createCallbackFcn(app, @WebsiteMenuSelected, true);
-            app.WebsiteMenu.Text = 'Website';
-
             % Show the figure after all components are created
             app.UIFigure.Visible = 'on';
         end
@@ -1562,14 +1600,26 @@ classdef SiTraNo_exported < matlab.apps.AppBase
         % Construct app
         function app = SiTraNo_exported
 
-            % Create UIFigure and components
-            createComponents(app)
+            runningApp = getRunningApp(app);
 
-            % Register the app with App Designer
-            registerApp(app, app.UIFigure)
+            % Check for running singleton app
+            if isempty(runningApp)
 
-            % Execute the startup function
-            runStartupFcn(app, @startupFcn)
+                % Create UIFigure and components
+                createComponents(app)
+
+                % Register the app with App Designer
+                registerApp(app, app.UIFigure)
+
+                % Execute the startup function
+                runStartupFcn(app, @startupFcn)
+            else
+
+                % Focus the running singleton app
+                figure(runningApp.UIFigure)
+
+                app = runningApp;
+            end
 
             if nargout == 0
                 clear app
