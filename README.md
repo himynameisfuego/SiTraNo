@@ -35,7 +35,7 @@ This app wants to promote experimenting with the sound decomposition process by 
 * Adding new separation methods.
 * Polish spectrogram presentation.
 * Improve code efficiency.
-* JUCE version of the app.
+* JUCE version of the app --> soon available on [Tantep Sinjanakhom](https://github.com/60010454)'s GitHub!
 
 Expected work period: Summer 2023
 
