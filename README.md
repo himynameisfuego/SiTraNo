@@ -1,7 +1,7 @@
 # SiTraNo (SInes+TRAnsients+NOise)
 A MATLAB app for sines-transients-noise decomposition of audio signals. Developed using App Designer in Matlab 2020b.
 
-**SiTraNo^+ - A Real-Time JUCE-based version of SiTraNo is available** [https://github.com/tantepSjnk/SiTraNoPlus/][here]!
+**SiTraNo^+ - A Real-Time JUCE-based version of SiTraNo is available** [here](https://github.com/tantepSjnk/SiTraNoPlus)!
 
 * L. Fierro, and V. Välimäki. _"**SiTraNo: a MATLAB app for sines-transient-noise decomposition of audio signals**"_.  Proceedings of the 24th International Conference on Digital Audio Effects (DAFx20in21), Vienna, Austria.
 
