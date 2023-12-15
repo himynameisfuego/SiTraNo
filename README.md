@@ -35,13 +35,11 @@ This app wants to promote experimenting with the sound decomposition process by 
 * **Fuzzy**: Fuzzy logic decomposition [5].
 
 ## Future updates
-* Add Standalone installer featuring MATLAB Runtime.
-* Adding new separation methods.
-* Polish spectrogram presentation.
 * Improve code efficiency.
-* JUCE version of the app --> soon available on [Tantep Sinjanakhom](https://github.com/60010454)'s GitHub!
+* New artifact detection/evaluation methods.
+* Polish spectrogram presentation.
 
-Expected work period: Summer 2023
+Expected work period: Spring 2024
 
 ## Contributing
 Suggestions and contributions to the code are both welcomed and encouraged. Please open an issue to discuss your changes and submit a pull request.
